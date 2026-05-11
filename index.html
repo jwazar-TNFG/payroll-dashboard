@@ -118,8 +118,11 @@
         .category-bar {
             display: flex;
             align-items: center;
-            margin: 10px 0;
+            margin: 6px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
+        .category-bar:last-child { border-bottom: none; }
         .category-color {
             width: 40px;
             padding: 6px 8px;
@@ -235,10 +238,10 @@
         </div>
         
         <!-- Categories -->
-        <div class="card">
+        <div class="card span-2" style="max-height: 500px;">
             <div class="card-title">Payroll Categories</div>
-            <div class="card-subtitle">Breakdown by type</div>
-            <div id="categoryChart"></div>
+            <div class="card-subtitle">All categories from system</div>
+            <div id="categoryChart" style="max-height: 420px; overflow-y: auto;"></div>
         </div>
         
         <!-- Office Comparison Chart -->
@@ -257,7 +260,7 @@
             <div id="topEarners" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;"></div>
         </div>
         
-        <div class="updated">Last updated: May 10, 2026 at 12:41 PM ET</div>
+        <div class="updated">Last updated: May 11, 2026 at 07:38 AM ET</div>
     </div>
     
     <script>
